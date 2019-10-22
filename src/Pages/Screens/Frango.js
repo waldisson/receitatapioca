@@ -8,14 +8,14 @@ import {
   View,
   Image,
 } from 'react-native';
-import styles from '../../Styles/stylesSobremesa';
+import styles from '../../Styles/stylesSalgada';
 
 export default props => {
   /**
    * Transição de botões =======================================================
    */
   const voltar = () => {
-    props.navigation.navigate('Sobremesas');
+    props.navigation.navigate('Salgadas');
   };
   return (
     <SafeAreaView style={styles.sobremesas}>
@@ -34,15 +34,17 @@ export default props => {
           <View style={styles.container}>
             <Image
               resizeMode="cover"
-              source={require('../../assets/img/tapioca/geladofrutas.jpg')}
+              source={require('../../assets/img/tapioca/frango.jpg')}
               style={styles.imgBolinho}
             />
           </View>
 
-          <Text style={styles.titulo}>GELADO COM FRUTAS</Text>
+          <Text style={styles.titulo}>TAPIOCA DE FRANGO</Text>
           <Text style={styles.h1}>Resumo:</Text>
           <Text style={styles.txtResumo}>
-            30 minutos de preparo e rende 8 porções.{' '}
+            Receita de frango desfiado definitiva, mas, com certeza, uma das
+            mais queridas e com a cara do Brasil é a tapioca de frango, um
+            lanche nutritivo e leve, muito rápido e simples. .{' '}
           </Text>
 
           <Text style={styles.h1}>Ingredientes</Text>
@@ -56,73 +58,65 @@ export default props => {
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>200 g de tapioca em farinha;</Text>
+            <Text>1 Filé de Frango;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>1 1/2 litro de água;</Text>
+            <Text>Suco de ½ limão;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>250 g de açúcar para o gelado;</Text>
+            <Text>Sal e pimenta-do-reino a gosto;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>100 g de açúcar para a calda;</Text>
+            <Text>2 colheres (sopa) de manteiga;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>200 ml de leite de coco para o gelado;</Text>
+            <Text>Tapioca granulada;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>200 ml de leite de coco para a calda;</Text>
+            <Text>½ xícara de mussarela;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>1 pitada de sal;</Text>
-          </View>
-
-          <View style={styles.areaIconSeta}>
-            <Image
-              source={require('../../assets/icon/setaAzul.png')}
-              style={styles.iconSeta}
-            />
-            <Text>50 ml de água;</Text>
+            <Text>1 tomate;</Text>
           </View>
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>Frutas a escolher como damasco, lichia, coco etc;</Text>
+            <Text>Orégano fresco a gosto;</Text>
           </View>
 
           <Text style={styles.h1}>Modo de preparo</Text>
@@ -134,37 +128,44 @@ export default props => {
           />
          </View> */}
 
-          <Text style={styles.txtPreparo}>
-            Junte em uma panela a tapioca com a água.
-          </Text>
-          <Text style={styles.txtPreparo}>
-            Cozinhe até ficar transparente e encorpada.
-          </Text>
-          <Text style={styles.txtPreparo1}>Mexa sempre.</Text>
           <Text style={styles.txtPreparo1}>
-            Junte o açúcar e o leite de coco e a pitada de sal.
+            Tempere o Filé de Frango SEARA com sal, pimenta-do-reino e limão.
           </Text>
           <Text style={styles.txtPreparo1}>
-            Continue mexendo por mais cinco minutos.
+            Pique o tomate e a mussarela e reserve.
           </Text>
           <Text style={styles.txtPreparo1}>
-            Coloque em taças individuais e leve a geladeira.
+            Em uma panela, aqueça uma colher de manteiga e frite o filé de
+            frango, dourando bem dos dois lados.
           </Text>
 
-          <Text style={styles.h1}>Modo de preparo da Calda</Text>
+          <Text style={styles.txtPreparo1}>Deixe esfriar e desfie.</Text>
 
           <Text style={styles.txtPreparo1}>
-            Leve os 100 g de açúcar, 50 ml de água e os 200 ml de leite de coco
-            ao fogo, forma uma calda com uns cinco minutos de fervura.
-          </Text>
-          <Text style={styles.txtPreparo1}>Leve à geladeira.</Text>
-          <Text style={styles.txtPreparo1}>
-            Na hora de servir coloque um pouco da calda em cada taça por cima da
-            tapioca e por cima da calda coloque um pouco de coco fresco ralado
-            grosso com a fruta picada que escolheu (eu escolhi damasco).
+            Volte para a panela, adicione o tomate e refogue por 3 minutos.
           </Text>
 
-          <Text style={styles.h2}>fonte:https://www.tudogostoso.com.br</Text>
+          <Text style={styles.txtPreparo1}>
+            Aqueça uma frigideira média, pincele um pouco de manteiga e adicione
+            1 concha da tapioca granulada, espalhando com o auxílio de uma
+            colher.
+          </Text>
+
+          <Text style={styles.txtPreparo1}>
+            Aqueça uma frigideira média, pincele um pouco de manteiga e adicione
+            1 concha da tapioca granulada, espalhando com o auxílio de uma
+            colher.
+          </Text>
+
+          <Text style={styles.txtPreparo1}>
+            Dobre a tapioca e deixe por mais alguns segundos no fogo.
+          </Text>
+
+          <Text style={styles.txtPreparo1}>
+            Salpique orégano fresco e sirva a seguir.
+          </Text>
+
+          <Text style={styles.h2}>fonte: https://www.hojetemfrango.com.br</Text>
 
           {/* <View style={styles.banner}>
            <AdMobBanner

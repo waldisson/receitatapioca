@@ -8,14 +8,14 @@ import {
   View,
   Image,
 } from 'react-native';
-import styles from '../../Styles/stylesSobremesa';
+import styles from '../../Styles/stylesSalgada';
 
 export default props => {
   /**
    * Transição de botões =======================================================
    */
   const voltar = () => {
-    props.navigation.navigate('Sobremesas');
+    props.navigation.navigate('Salgadas');
   };
   return (
     <SafeAreaView style={styles.sobremesas}>
@@ -34,16 +34,15 @@ export default props => {
           <View style={styles.container}>
             <Image
               resizeMode="cover"
-              source={require('../../assets/img/tapioca/docinhodefesta.jpg')}
+              source={require('../../assets/img/tapioca/crepioca.jpg')}
               style={styles.imgBolinho}
             />
           </View>
 
-          <Text style={styles.titulo}>DOCINHO DE TAPIOCA</Text>
+          <Text style={styles.titulo}>LASANHA DE CREPIOCA</Text>
           <Text style={styles.h1}>Resumo:</Text>
           <Text style={styles.txtResumo}>
-            O interessante é que rende muitos docinhos. Uma receita rende em
-            média 40 docinhos de 18g cada.
+            Um belo prato para toda familia.{' '}
           </Text>
 
           <Text style={styles.h1}>Ingredientes</Text>
@@ -57,42 +56,66 @@ export default props => {
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>1 lata de leite condensado;</Text>
+            <Text>3 ovos;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>1 vidro de leite de coco;</Text>
+            <Text>6 colheres de sopa de goma de tapioca;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>1/2 xícara de tapioca(Escolha a mais fina);</Text>
+            <Text>1 berinjela;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>1 colher sopa de margarina;</Text>
+            <Text>1 cenoura;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>25g de coco ralado seco;</Text>
+            <Text>2 xícaras de molho de tomate;</Text>
+          </View>
+
+          <View style={styles.areaIconSeta}>
+            <Image
+              source={require('../../assets/icon/setaVermelha2.png')}
+              style={styles.iconSeta}
+            />
+            <Text>250 g de peito de frango cozido e desfiado;</Text>
+          </View>
+
+          <View style={styles.areaIconSeta}>
+            <Image
+              source={require('../../assets/icon/setaVermelha2.png')}
+              style={styles.iconSeta}
+            />
+            <Text>Queijo ralado pra finalizar;</Text>
+          </View>
+
+          <View style={styles.areaIconSeta}>
+            <Image
+              source={require('../../assets/icon/setaVermelha2.png')}
+              style={styles.iconSeta}
+            />
+            <Text>Sal e pimenta a gosto;</Text>
           </View>
 
           <Text style={styles.h1}>Modo de preparo</Text>
@@ -105,30 +128,32 @@ export default props => {
          </View> */}
 
           <Text style={styles.txtPreparo1}>
-            Em uma vasilha, misture a tapioca com o leite de coco e o leite
-            condensado. Deixe essa mistura descansando por 1:30h. A tapioca vai
-            absorver um pouco do leite.
+            Misture o frango desfiado com o molho de tomate.
           </Text>
           <Text style={styles.txtPreparo1}>
-            Após aguardar esse tempo, leve a mistura ao fogo com o coco e a
-            margarina.
+            Corte a berinjela e a cenoura em fatias bem fininhas.
           </Text>
           <Text style={styles.txtPreparo1}>
-            Mexa sem parar até o ponto de enrolar. Coloque em um prato para
-            esfriar.
+            Bata os ovos com a goma de tapioca e uma pitada de sal.
           </Text>
           <Text style={styles.txtPreparo1}>
-            Você vai se assustar, pois esse docinho atinge o ponto rapidamente .
+            Aqueça uma frigideira antiaderente e prepare 3 panquecas com a
+            massa.
           </Text>
           <Text style={styles.txtPreparo1}>
-            Enrole no formato de bolinhas e passe no coco ralado seco.
+            Em um refratário comece a montar a lasanha:
           </Text>
           <Text style={styles.txtPreparo1}>
-            Faça esse docinho com no máximo 1 dia de antecedência da festa para
-            mantê-lo fresquinho.
+            primeiro o molho, depois a massa, depois uma camada de berinjela,
+            outra de cenoura (se quiser pode temperar a camada de legumes com
+            sal e pimenta - e vá intercalando as camadas e finalize com um pouco
+            que queijo ralado e algumas ervas, se quiser).
+          </Text>
+          <Text style={styles.txtPreparo1}>
+            Leve ao forno já preaquecido no grau máximo até gratinar.
           </Text>
 
-          <Text style={styles.h2}>fonte: http://www.maurorebelo.com.br</Text>
+          <Text style={styles.h2}>fonte: https://www.taofeminino.com.br</Text>
 
           {/* <View style={styles.banner}>
            <AdMobBanner

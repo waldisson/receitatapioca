@@ -8,14 +8,14 @@ import {
   View,
   Image,
 } from 'react-native';
-import styles from '../../Styles/stylesSobremesa';
+import styles from '../../Styles/stylesSalgada';
 
 export default props => {
   /**
    * Transição de botões =======================================================
    */
   const voltar = () => {
-    props.navigation.navigate('Sobremesas');
+    props.navigation.navigate('Salgadas');
   };
   return (
     <SafeAreaView style={styles.sobremesas}>
@@ -34,16 +34,16 @@ export default props => {
           <View style={styles.container}>
             <Image
               resizeMode="cover"
-              source={require('../../assets/img/tapioca/docinhodefesta.jpg')}
+              source={require('../../assets/img/tapioca/omelete.jpg')}
               style={styles.imgBolinho}
             />
           </View>
 
-          <Text style={styles.titulo}>DOCINHO DE TAPIOCA</Text>
+          <Text style={styles.titulo}>OMELETE DE TAPIOCA</Text>
           <Text style={styles.h1}>Resumo:</Text>
           <Text style={styles.txtResumo}>
-            O interessante é que rende muitos docinhos. Uma receita rende em
-            média 40 docinhos de 18g cada.
+            Use a criatividade e crie diversos recheios, carne, alho poro,
+            queijos, salmão, calabresa, vegetais refogados e assim por diante.{' '}
           </Text>
 
           <Text style={styles.h1}>Ingredientes</Text>
@@ -57,42 +57,42 @@ export default props => {
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>1 lata de leite condensado;</Text>
+            <Text>1 ovo;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>1 vidro de leite de coco;</Text>
+            <Text>1 colher (sopa) de tapioca pronta;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>1/2 xícara de tapioca(Escolha a mais fina);</Text>
+            <Text>½ colher (sopa) de queijo parmesão ralado;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>1 colher sopa de margarina;</Text>
+            <Text>Azeite de oliva;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>25g de coco ralado seco;</Text>
+            <Text>Sal e pimenta;</Text>
           </View>
 
           <Text style={styles.h1}>Modo de preparo</Text>
@@ -105,30 +105,21 @@ export default props => {
          </View> */}
 
           <Text style={styles.txtPreparo1}>
-            Em uma vasilha, misture a tapioca com o leite de coco e o leite
-            condensado. Deixe essa mistura descansando por 1:30h. A tapioca vai
-            absorver um pouco do leite.
+            Em um recipiente quebre o ovo, bata juntamente com a colher de
+            tapioca, adicione o queijo ralado, coloque sal e pimenta a gosto.
           </Text>
           <Text style={styles.txtPreparo1}>
-            Após aguardar esse tempo, leve a mistura ao fogo com o coco e a
-            margarina.
+            Aqueça uma frigideira pequena, unte levemente com azeite de oliva e
+            despeje o ovo batido, deixe cozinhar de um lado, vire para cozinhar
+            o outro lado, não cozinhe demais para que não fique ressecada.
           </Text>
           <Text style={styles.txtPreparo1}>
-            Mexa sem parar até o ponto de enrolar. Coloque em um prato para
-            esfriar.
-          </Text>
-          <Text style={styles.txtPreparo1}>
-            Você vai se assustar, pois esse docinho atinge o ponto rapidamente .
-          </Text>
-          <Text style={styles.txtPreparo1}>
-            Enrole no formato de bolinhas e passe no coco ralado seco.
-          </Text>
-          <Text style={styles.txtPreparo1}>
-            Faça esse docinho com no máximo 1 dia de antecedência da festa para
-            mantê-lo fresquinho.
+            Coloque o recheio e feche o omelete, deixe com o fogo baixo por mais
+            um tempinho para derreter o queijo e aquecer um pouco os
+            ingredientes e sirva.
           </Text>
 
-          <Text style={styles.h2}>fonte: http://www.maurorebelo.com.br</Text>
+          <Text style={styles.h2}>fonte: https://melepimenta.com</Text>
 
           {/* <View style={styles.banner}>
            <AdMobBanner

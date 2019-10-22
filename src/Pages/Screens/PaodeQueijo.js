@@ -8,7 +8,7 @@ import {
   View,
   Image,
 } from 'react-native';
-import styles from '../../Styles/stylesGeral';
+import styles from '../../Styles/stylesSobremesa';
 
 export default props => {
   /**

@@ -8,14 +8,14 @@ import {
   View,
   Image,
 } from 'react-native';
-import styles from '../../Styles/stylesSobremesa';
+import styles from '../../Styles/stylesSalgada';
 
 export default props => {
   /**
    * Transição de botões =======================================================
    */
   const voltar = () => {
-    props.navigation.navigate('Sobremesas');
+    props.navigation.navigate('Salgadas');
   };
   return (
     <SafeAreaView style={styles.sobremesas}>
@@ -34,17 +34,17 @@ export default props => {
           <View style={styles.container}>
             <Image
               resizeMode="cover"
-              source={require('../../assets/img/tapioca/pizza.jpg')}
+              source={require('../../assets/img/tapioca/paozinhodetapioca.jpg')}
               style={styles.imgBolinho}
             />
           </View>
 
-          <Text style={styles.titulo}>PIZZA DE FRIGIDEIRA</Text>
+          <Text style={styles.titulo}>PÃOZINHO DE TAPIOCA</Text>
           <Text style={styles.h1}>Resumo:</Text>
           <Text style={styles.txtResumo}>
-            Opção de recheio a seu gosto: Queijo + tomate Queijo + frango
-            desfiado Queijo + lombo Atum + brócolis Peite de peru + queijo
-            Frango + tomate seco{' '}
+            O parmesão aparece 2 vezes na receita porque vai dentro da massa e
+            depois as bolinhas também são passadas no queijo antes de assar. Mas
+            para frente ficará claro{' '}
           </Text>
 
           <Text style={styles.h1}>Ingredientes</Text>
@@ -58,50 +58,66 @@ export default props => {
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>2 claras (ou um ovo grande);</Text>
+            <Text>1 ½ xícara (chá) de leite (360 ml);</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>2 colheres (sopa) de tapioca (20g);</Text>
+            <Text>¼ xícara (chá) de óleo (60 ml);</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>1 colher (sopa) de azeite (ou manteiga);</Text>
+            <Text>sal a gosto;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>1 colher (sopa) de leite;</Text>
+            <Text>¾ xícara (chá) de tapioca granulada (150 g);</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>Sal a gosto;</Text>
+            <Text>1 ovo;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>Temperos opcionais;</Text>
+            <Text>½ xícara (chá) de queijo parmesão ralado (50 g);</Text>
+          </View>
+
+          <View style={styles.areaIconSeta}>
+            <Image
+              source={require('../../assets/icon/setaVermelha2.png')}
+              style={styles.iconSeta}
+            />
+            <Text>½ xícara (chá) de polvilho doce (60 g);</Text>
+          </View>
+
+          <View style={styles.areaIconSeta}>
+            <Image
+              source={require('../../assets/icon/setaVermelha2.png')}
+              style={styles.iconSeta}
+            />
+            <Text>1 xícara (chá) de queijo parmesão ralado (100 g);</Text>
           </View>
 
           <Text style={styles.h1}>Modo de preparo</Text>
@@ -114,25 +130,28 @@ export default props => {
          </View> */}
 
           <Text style={styles.txtPreparo1}>
-            Pré-aqueça o forno a 200 graus.
+            Leve uma panela ao fogo médio com 1 ½ xícara (chá) de leite, ¼
+            xícara (chá) de óleo e sal a gosto e mexa até ferver. Reserve.
           </Text>
           <Text style={styles.txtPreparo1}>
-            Bata ligeiramente as claras de ovo. Dica: Você pode optar por
-            colocar apenas uma clara, eu prefiro colocar as duas para me dar
-            mais saciedade. Isso é uma ótima estrategia para quem deseja
-            emagrecer.
+            Misture numa tigela ¾ xícara (chá) de tapioca granulada e o leite
+            fervente da panela (feito acima) e deixe esfriar. Mexa a cada 5
+            minutos com o batedor de arame para ajudar a engrossar mais rápido.
           </Text>
           <Text style={styles.txtPreparo1}>
-            Adicione a tapioca, o azeite e o leite. Misture tudo até ficar
-            homogêneo. Dica: Se desejar uma massa de pizza crocante, adicione
-            mais 2 colheres rasas de tapioca.
+            Depois da mistura fria, que virará uma espécie de goma, acrescente 1
+            ovo, ½ xícara (chá) de queijo parmesão ralado e ½ xícara (chá) de
+            polvilho doce e misture bem. Com as mãos, pegue pequenas porções de
+            massa, faça bolinhas e passe em 1 xícara (chá) de queijo parmesão
+            ralado (não passei no queijo, assei direto)
           </Text>
           <Text style={styles.txtPreparo1}>
-            Adicione o sal e os temperos se desejar, eu gosto de adicionar
-            salsinha desidratada.
+            Coloque as bolinhas numa assadeira untada com manteiga e leve ao
+            forno médio pré- aquecido a 180ºC por +/- 30 minutos ou até dourar.
+            Retire do forno e sirva em seguida.
           </Text>
 
-          <Text style={styles.h2}>fonte: https://receitanatureba.com</Text>
+          <Text style={styles.h2}>fonte: https://panelaterapia.com</Text>
 
           {/* <View style={styles.banner}>
            <AdMobBanner

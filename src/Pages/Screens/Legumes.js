@@ -8,14 +8,14 @@ import {
   View,
   Image,
 } from 'react-native';
-import styles from '../../Styles/stylesSobremesa';
+import styles from '../../Styles/stylesSalgada';
 
 export default props => {
   /**
    * Transição de botões =======================================================
    */
   const voltar = () => {
-    props.navigation.navigate('Sobremesas');
+    props.navigation.navigate('Salgadas');
   };
   return (
     <SafeAreaView style={styles.sobremesas}>
@@ -34,15 +34,16 @@ export default props => {
           <View style={styles.container}>
             <Image
               resizeMode="cover"
-              source={require('../../assets/img/tapioca/geladofrutas.jpg')}
+              source={require('../../assets/img/tapioca/legumes.jpg')}
               style={styles.imgBolinho}
             />
           </View>
 
-          <Text style={styles.titulo}>GELADO COM FRUTAS</Text>
+          <Text style={styles.titulo}>TAPIOCA COM LEGUMES</Text>
           <Text style={styles.h1}>Resumo:</Text>
           <Text style={styles.txtResumo}>
-            30 minutos de preparo e rende 8 porções.{' '}
+            Aprenda esta receita de Tapioca recheada com legumes, que além de
+            ficar uma delícia, é uma opção saudável para o dia a dia! Tempo: 1h.{' '}
           </Text>
 
           <Text style={styles.h1}>Ingredientes</Text>
@@ -56,73 +57,90 @@ export default props => {
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>200 g de tapioca em farinha;</Text>
+            <Text>6 colheres (sopa) de azeite;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>1 1/2 litro de água;</Text>
+            <Text>2 dentes de alho picados;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>250 g de açúcar para o gelado;</Text>
+            <Text>1 cebola picada;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>100 g de açúcar para a calda;</Text>
+            <Text>1/2 pimentão vermelho picado;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>200 ml de leite de coco para o gelado;</Text>
+            <Text>1/2 pimentão amarelo picado;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>200 ml de leite de coco para a calda;</Text>
+            <Text>1 cenoura em cubos;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>1 pitada de sal;</Text>
+            <Text>1 berinjela em cubos;</Text>
           </View>
 
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>50 ml de água;</Text>
+            <Text>1 abobrinha italiana em cubos;</Text>
           </View>
+
           <View style={styles.areaIconSeta}>
             <Image
-              source={require('../../assets/icon/setaAzul.png')}
+              source={require('../../assets/icon/setaVermelha2.png')}
               style={styles.iconSeta}
             />
-            <Text>Frutas a escolher como damasco, lichia, coco etc;</Text>
+            <Text>1 tomate picado;</Text>
+          </View>
+
+          <View style={styles.areaIconSeta}>
+            <Image
+              source={require('../../assets/icon/setaVermelha2.png')}
+              style={styles.iconSeta}
+            />
+            <Text>Sal,orégano,manjericão picado a gosto;</Text>
+          </View>
+
+          <View style={styles.areaIconSeta}>
+            <Image
+              source={require('../../assets/icon/setaVermelha2.png')}
+              style={styles.iconSeta}
+            />
+            <Text>20 colheres(sopa)de goma tapioca hidratada;</Text>
           </View>
 
           <Text style={styles.h1}>Modo de preparo</Text>
@@ -134,37 +152,24 @@ export default props => {
           />
          </View> */}
 
-          <Text style={styles.txtPreparo}>
-            Junte em uma panela a tapioca com a água.
-          </Text>
-          <Text style={styles.txtPreparo}>
-            Cozinhe até ficar transparente e encorpada.
-          </Text>
-          <Text style={styles.txtPreparo1}>Mexa sempre.</Text>
           <Text style={styles.txtPreparo1}>
-            Junte o açúcar e o leite de coco e a pitada de sal.
+            Em uma fôrma, misture o azeite, o alho, a cebola, os pimentões, a
+            cenoura, a berinjela, a abobrinha, o tomate, sal e orégano. Cubra
+            com papel-alumínio e leve ao forno médio, preaquecido, por 30
+            minutos ou até amaciar.
           </Text>
           <Text style={styles.txtPreparo1}>
-            Continue mexendo por mais cinco minutos.
+            Retire e reserve. Polvilhe 4 colheres (sopa) da goma em uma
+            frigideira antiaderente média, cobrindo todo o fundo. Leve ao fogo
+            baixo por 3 minutos e vire, deixando mais 2 minutos.
           </Text>
           <Text style={styles.txtPreparo1}>
-            Coloque em taças individuais e leve a geladeira.
+            Retire e repita o procedimento com a tapioca restante. Divida o
+            recheio entre as tapiocas, dobre ao meio e sirva polvilhado com
+            manjericão.
           </Text>
 
-          <Text style={styles.h1}>Modo de preparo da Calda</Text>
-
-          <Text style={styles.txtPreparo1}>
-            Leve os 100 g de açúcar, 50 ml de água e os 200 ml de leite de coco
-            ao fogo, forma uma calda com uns cinco minutos de fervura.
-          </Text>
-          <Text style={styles.txtPreparo1}>Leve à geladeira.</Text>
-          <Text style={styles.txtPreparo1}>
-            Na hora de servir coloque um pouco da calda em cada taça por cima da
-            tapioca e por cima da calda coloque um pouco de coco fresco ralado
-            grosso com a fruta picada que escolheu (eu escolhi damasco).
-          </Text>
-
-          <Text style={styles.h2}>fonte:https://www.tudogostoso.com.br</Text>
+          <Text style={styles.h2}>fonte: https://guiadacozinha.com.br</Text>
 
           {/* <View style={styles.banner}>
            <AdMobBanner

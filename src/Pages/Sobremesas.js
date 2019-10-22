@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
   Image,
 } from 'react-native';
-import styles from '../Styles/stylesGeral';
+import styles from '../Styles/stylesSobremesa';
 import PaodeQueijo from './Screens/PaodeQueijo';
 import BolinhoEstudante from './Screens/BolinhoEstudante';
 

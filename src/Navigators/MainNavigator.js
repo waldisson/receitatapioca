@@ -9,6 +9,8 @@ import Salgadas from '../Pages/Salgadas';
 import Doces from '../Pages/Doces';
 import Bolos from '../Pages/Bolos';
 
+/**Page de Sobremesas */
+
 import Bolinhodetapioca from '../Pages/Screens/Bolinhodetapioca';
 import Omeletedetapioca from '../Pages/Screens/Omeletedetapioca';
 import SorvetedeTapioca from '../Pages/Screens/SorvetedeTapioca';
@@ -22,6 +24,22 @@ import PaodeQueijo from '../Pages/Screens/PaodeQueijo';
 import PizzaFrigideira from '../Pages/Screens/PizzaFrigideira';
 import BolinhoEstudante from '../Pages/Screens/BolinhoEstudante';
 import TapiocaChocolate from '../Pages/Screens/TapiocaChocolate';
+
+/**Page de Salgados */
+
+import Omelete from '../Pages/Screens/Omelete';
+import Legumes from '../Pages/Screens/Legumes';
+import Carnedosol from '../Pages/Screens/Carnedosol';
+import Atum from '../Pages/Screens/Atum';
+import Frango from '../Pages/Screens/Frango';
+import Torta from '../Pages/Screens/Torta';
+import Dadinho from '../Pages/Screens/Dadinho';
+import Coxinha from '../Pages/Screens/Coxinha';
+import Mexicana from '../Pages/Screens/Mexicana';
+import Panqueca from '../Pages/Screens/Panqueca';
+import Paozinho from '../Pages/Screens/Paozinho';
+import Lasanha from '../Pages/Screens/Lasanha';
+// import TapiocaChocolate from '../Pages/Screens/TapiocaChocolate';
 
 console.disableYellowBox = true;
 const MainNavigator = createStackNavigator(
@@ -144,6 +162,90 @@ const MainNavigator = createStackNavigator(
       screen: TapiocaChocolate,
       navigationOptions: {
         title: 'Tapioca Chocolate',
+        header: null,
+      },
+    },
+    Omelete: {
+      screen: Omelete,
+      navigationOptions: {
+        title: 'Omelete de Tapioca',
+        header: null,
+      },
+    },
+    Legumes: {
+      screen: Legumes,
+      navigationOptions: {
+        title: 'Tapioca com Legumes',
+        header: null,
+      },
+    },
+    Carnedosol: {
+      screen: Carnedosol,
+      navigationOptions: {
+        title: 'Tapioca com Carne do Sol',
+        header: null,
+      },
+    },
+    Atum: {
+      screen: Atum,
+      navigationOptions: {
+        title: 'Tapioca com Atum',
+        header: null,
+      },
+    },
+    Frango: {
+      screen: Frango,
+      navigationOptions: {
+        title: 'Tapioca com Frango',
+        header: null,
+      },
+    },
+    Torta: {
+      screen: Torta,
+      navigationOptions: {
+        title: 'Torta de Tapioca',
+        header: null,
+      },
+    },
+    Dadinho: {
+      screen: Dadinho,
+      navigationOptions: {
+        title: 'Dadinho Assado',
+        header: null,
+      },
+    },
+    Coxinha: {
+      screen: Coxinha,
+      navigationOptions: {
+        title: 'Coxinha de Tapioca',
+        header: null,
+      },
+    },
+    Mexicana: {
+      screen: Mexicana,
+      navigationOptions: {
+        title: 'Tapioca Mexicana',
+        header: null,
+      },
+    },
+    Panqueca: {
+      screen: Panqueca,
+      navigationOptions: {
+        title: 'Panqueca de Tapioca',
+        header: null,
+      },
+    },
+    Paozinho: {
+      screen: Paozinho,
+      navigationOptions: {
+        title: 'Paozinho de Tapioca',
+        header: null,
+      },
+    },
+    Lasanha: {
+      screen: Lasanha,
+      navigationOptions: {
+        title: 'Lasanha de Crepioca',
         header: null,
       },
     },

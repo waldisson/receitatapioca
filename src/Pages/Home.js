@@ -10,7 +10,7 @@ import {
   View,
   ImageBackground,
 } from 'react-native';
-import styles from '../Styles/stylesGeral';
+import styles from '../Styles/stylesHome';
 import {Fab, Icon, Button} from 'native-base';
 
 playstore = () => {

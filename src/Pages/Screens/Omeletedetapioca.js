@@ -1,7 +1,7 @@
 //Importando o hooks do React ==================================================
 import React, {useState} from 'react';
 import {Text, SafeAreaView} from 'react-native';
-import styles from '../../Styles/stylesGeral';
+import styles from '../../Styles/stylesSobremesa';
 
 export default () => {
   return (
