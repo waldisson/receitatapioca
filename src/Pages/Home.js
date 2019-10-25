@@ -68,7 +68,7 @@ export default props => {
         </View>
 
         <View style={styles.btnsAreaGeral}>
-          <TouchableOpacity onPress={Sobremesas}>
+          <TouchableHighlight underlayColor="#ccc" onPress={Sobremesas}>
             <View style={{justifyContent: 'center', alignItems: 'center'}}>
               <Image
                 source={require('../assets/img/tapioca/cafe.jpg')}
@@ -86,9 +86,9 @@ export default props => {
                 Sobremesas
               </Text>
             </View>
-          </TouchableOpacity>
+          </TouchableHighlight>
 
-          <TouchableOpacity onPress={Salgadas}>
+          <TouchableHighlight underlayColor="#ccc" onPress={Salgadas}>
             <View style={{justifyContent: 'center', alignItems: 'center'}}>
               <Image
                 source={require('../assets/img/tapioca/salgadas.jpg')}
@@ -107,9 +107,9 @@ export default props => {
                 Salgadas
               </Text>
             </View>
-          </TouchableOpacity>
+          </TouchableHighlight>
 
-          <TouchableOpacity onPress={Doces}>
+          <TouchableHighlight underlayColor="#ccc" onPress={Doces}>
             <View style={{justifyContent: 'center', alignItems: 'center'}}>
               <Image
                 source={require('../assets/img/tapioca/doce.jpg')}
@@ -128,9 +128,9 @@ export default props => {
                 Doces
               </Text>
             </View>
-          </TouchableOpacity>
+          </TouchableHighlight>
 
-          <TouchableOpacity onPress={Bolos}>
+          <TouchableHighlight underlayColor="#ccc" onPress={Bolos}>
             <View style={{justifyContent: 'center', alignItems: 'center'}}>
               <Image
                 source={require('../assets/img/tapioca/bolo.jpg')}
@@ -149,7 +149,7 @@ export default props => {
                 Bolos
               </Text>
             </View>
-          </TouchableOpacity>
+          </TouchableHighlight>
         </View>
         <View>
           <Text style={styles.txtReceitas}>"35+ Receitas Tapioca"</Text>

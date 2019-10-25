@@ -6,42 +6,41 @@ import {
   ScrollView,
   View,
   TouchableOpacity,
+  TouchableHighlight,
   Image,
 } from 'react-native';
 import styles from '../Styles/stylesDoces';
-import PaodeQueijo from './Screens/PaodeQueijo';
-import BolinhoEstudante from './Screens/BolinhoEstudante';
 
 export default props => {
   /**
    * Transição de botões =======================================================
    */
-  const Bolinhodetapioca = () => {
-    props.navigation.navigate('Bolinhodetapioca');
+  const Cuscuz = () => {
+    props.navigation.navigate('Cuscuz');
   };
 
-  const SorvetedeTapioca = () => {
-    props.navigation.navigate('SorvetedeTapioca');
+  const doceChocolate = () => {
+    props.navigation.navigate('doceChocolate');
   };
 
-  const SacoledeTapioca = () => {
-    props.navigation.navigate('SacoledeTapioca');
+  const Cestinha = () => {
+    props.navigation.navigate('Cestinha');
   };
 
-  const GeladoFrutas = () => {
-    props.navigation.navigate('GeladoFrutas');
+  const CremeCoco = () => {
+    props.navigation.navigate('CremeCoco');
   };
 
-  const SobremesaFacil = () => {
-    props.navigation.navigate('SobremesaFacil');
+  const CafeDoce = () => {
+    props.navigation.navigate('CafeDoce');
   };
 
-  const CremeGoiabada = () => {
-    props.navigation.navigate('CremeGoiabada');
+  const Morango = () => {
+    props.navigation.navigate('Morango');
   };
 
-  const GeleiaFramboesa = () => {
-    props.navigation.navigate('GeleiadeFramboesa');
+  const Manjar = () => {
+    props.navigation.navigate('Manjar');
   };
 
   const Docinhos = () => {
@@ -68,107 +67,107 @@ export default props => {
    * Inicio do retorno das informações para tela ===============================
    */
   return (
-    <SafeAreaView style={styles.sobremesas}>
+    <SafeAreaView style={styles.doces}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{flexDirection: 'row'}}>
           <View>
-            <TouchableOpacity onPress={Bolinhodetapioca}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Cuscuz}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
-                  source={require('../assets/img/tapioca/bolinhoTapioca.jpg')}
+                  source={require('../assets/img/tapioca/cuscuz.jpg')}
                   style={styles.imgSobremesa}
                 />
-                <Text style={styles.txtSobremesa}>BOLINHO DE TAPIOCA</Text>
-                <Text style={styles.subSobremesa}>Rendimento 30 porções</Text>
-              </View>
-            </TouchableOpacity>
-          </View>
-
-          <View>
-            <TouchableOpacity onPress={SorvetedeTapioca}>
-              <View style={styles.btnAreaSobremesa}>
-                <Image
-                  source={require('../assets/img/tapioca/SORVETE-DE-TAPIOCA.jpg')}
-                  style={styles.imgSobremesa}
-                />
-                <Text style={styles.txtSobremesa}>SORVETE DE TAPIOCA</Text>
-                <Text style={styles.subSobremesa}>Rendimento 15 porções</Text>
-              </View>
-            </TouchableOpacity>
-          </View>
-        </View>
-        <View style={{flexDirection: 'row'}}>
-          <View>
-            <TouchableOpacity onPress={SacoledeTapioca}>
-              <View style={styles.btnAreaSobremesa}>
-                <Image
-                  source={require('../assets/img/tapioca/geladinho.jpg')}
-                  style={styles.imgSobremesa}
-                />
-                <Text style={styles.txtSobremesa}>SACOLÉ DE TAPIOCA</Text>
-                <Text style={styles.subSobremesa}>Rendimento 15 porções</Text>
-              </View>
-            </TouchableOpacity>
-          </View>
-
-          <View>
-            <TouchableOpacity onPress={GeladoFrutas}>
-              <View style={styles.btnAreaSobremesa}>
-                <Image
-                  source={require('../assets/img/tapioca/geladofrutas.jpg')}
-                  style={styles.imgSobremesa}
-                />
-                <Text style={styles.txtSobremesa}>GELADO DE TAPIOCA</Text>
-                <Text style={styles.subSobremesa}>Rendimento 8 porções</Text>
-              </View>
-            </TouchableOpacity>
-          </View>
-        </View>
-
-        <View style={{flexDirection: 'row'}}>
-          <View>
-            <TouchableOpacity onPress={SobremesaFacil}>
-              <View style={styles.btnAreaSobremesa}>
-                <Image
-                  source={require('../assets/img/tapioca/sobremesafacil.jpg')}
-                  style={styles.imgSobremesa}
-                />
-                <Text style={styles.txtSobremesa}>SOBREMESA FÁCIL</Text>
-                <Text style={styles.subSobremesa}>Rendimento 25 porções</Text>
-              </View>
-            </TouchableOpacity>
-          </View>
-
-          <View>
-            <TouchableOpacity onPress={CremeGoiabada}>
-              <View style={styles.btnAreaSobremesa}>
-                <Image
-                  source={require('../assets/img/tapioca/cremedegaiabada.jpg')}
-                  style={styles.imgSobremesa}
-                />
-                <Text style={styles.txtSobremesa}>CREME GOIABADA</Text>
-                <Text style={styles.subSobremesa}>Rendimento 4 porções</Text>
-              </View>
-            </TouchableOpacity>
-          </View>
-        </View>
-
-        <View style={{flexDirection: 'row'}}>
-          <View>
-            <TouchableOpacity onPress={GeleiaFramboesa}>
-              <View style={styles.btnAreaSobremesa}>
-                <Image
-                  source={require('../assets/img/tapioca/framboesa.jpg')}
-                  style={styles.imgSobremesa}
-                />
-                <Text style={styles.txtSobremesa}>GELEIA DE FRAMBOESA</Text>
+                <Text style={styles.txtSobremesa}>CUSCUZ DOCE</Text>
                 <Text style={styles.subSobremesa}>Rendimento * porções</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
 
           <View>
-            <TouchableOpacity onPress={Docinhos}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={doceChocolate}>
+              <View style={styles.btnAreaSobremesa}>
+                <Image
+                  source={require('../assets/img/tapioca/doceChocolate.jpg')}
+                  style={styles.imgSobremesa}
+                />
+                <Text style={styles.txtSobremesa}>TAPIOCA BRIGADEIRO</Text>
+                <Text style={styles.subSobremesa}>Rendimento 15 porções</Text>
+              </View>
+            </TouchableHighlight>
+          </View>
+        </View>
+        <View style={{flexDirection: 'row'}}>
+          <View>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Cestinha}>
+              <View style={styles.btnAreaSobremesa}>
+                <Image
+                  source={require('../assets/img/tapioca/cestinha.jpg')}
+                  style={styles.imgSobremesa}
+                />
+                <Text style={styles.txtSobremesa}>CESTINHA DE TAPIOCA</Text>
+                <Text style={styles.subSobremesa}>Rendimento 5 porções</Text>
+              </View>
+            </TouchableHighlight>
+          </View>
+
+          <View>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={CremeCoco}>
+              <View style={styles.btnAreaSobremesa}>
+                <Image
+                  source={require('../assets/img/tapioca/cremeCoco.jpg')}
+                  style={styles.imgSobremesa}
+                />
+                <Text style={styles.txtSobremesa}>CREME c/ COCO</Text>
+                <Text style={styles.subSobremesa}>Rendimento * porções</Text>
+              </View>
+            </TouchableHighlight>
+          </View>
+        </View>
+
+        <View style={{flexDirection: 'row'}}>
+          <View>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={CafeDoce}>
+              <View style={styles.btnAreaSobremesa}>
+                <Image
+                  source={require('../assets/img/tapioca/docedeleite.jpg')}
+                  style={styles.imgSobremesa}
+                />
+                <Text style={styles.txtSobremesa}>CAFÉ c/ DOCE DE LEITE</Text>
+                <Text style={styles.subSobremesa}>Rendimento 8 porções</Text>
+              </View>
+            </TouchableHighlight>
+          </View>
+
+          <View>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Morango}>
+              <View style={styles.btnAreaSobremesa}>
+                <Image
+                  source={require('../assets/img/tapioca/tapioca_de_morango.jpg')}
+                  style={styles.imgSobremesa}
+                />
+                <Text style={styles.txtSobremesa}>MORANGO c/ LEITE C...</Text>
+                <Text style={styles.subSobremesa}>Rendimento * porções</Text>
+              </View>
+            </TouchableHighlight>
+          </View>
+        </View>
+
+        <View style={{flexDirection: 'row'}}>
+          <View>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Manjar}>
+              <View style={styles.btnAreaSobremesa}>
+                <Image
+                  source={require('../assets/img/tapioca/Manjar.jpg')}
+                  style={styles.imgSobremesa}
+                />
+                <Text style={styles.txtSobremesa}>MANJAR DE TAPIOCA</Text>
+                <Text style={styles.subSobremesa}>Rendimento 6 porções</Text>
+              </View>
+            </TouchableHighlight>
+          </View>
+
+          <View>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Docinhos}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
                   source={require('../assets/img/tapioca/docinhodefesta.jpg')}
@@ -177,13 +176,13 @@ export default props => {
                 <Text style={styles.txtSobremesa}>DOCINHO DE TAPIOCA</Text>
                 <Text style={styles.subSobremesa}>Rende 40 docinhos</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
         </View>
 
         <View style={{flexDirection: 'row'}}>
           <View>
-            <TouchableOpacity onPress={PaodeQueijo}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={PaodeQueijo}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
                   source={require('../assets/img/tapioca/paodequeijo.jpg')}
@@ -192,11 +191,13 @@ export default props => {
                 <Text style={styles.txtSobremesa}>PÃO DE QUEIJO</Text>
                 <Text style={styles.subSobremesa}>Rendimento * porções</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
 
           <View>
-            <TouchableOpacity onPress={PizzaFrigideira}>
+            <TouchableHighlight
+              underlayColor="#e8e8e8"
+              onPress={PizzaFrigideira}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
                   source={require('../assets/img/tapioca/pizza.jpg')}
@@ -205,13 +206,15 @@ export default props => {
                 <Text style={styles.txtSobremesa}>PIZZA DE FRIGIDEIRA</Text>
                 <Text style={styles.subSobremesa}>Rende * fatias</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
         </View>
 
         <View style={{flexDirection: 'row', marginBottom: 20}}>
           <View>
-            <TouchableOpacity onPress={BolinhoEstudante}>
+            <TouchableHighlight
+              underlayColor="#e8e8e8"
+              onPress={BolinhoEstudante}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
                   source={require('../assets/img/tapioca/bolinhoEstudante.jpg')}
@@ -220,11 +223,13 @@ export default props => {
                 <Text style={styles.txtSobremesa}>BOLINHO ESTUDANTE</Text>
                 <Text style={styles.subSobremesa}>Rendimento 6 pessoas</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
 
           <View>
-            <TouchableOpacity onPress={TapiocaChocolate}>
+            <TouchableHighlight
+              underlayColor="#e8e8e8"
+              onPress={TapiocaChocolate}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
                   source={require('../assets/img/tapioca/chocolate.jpg')}
@@ -233,7 +238,7 @@ export default props => {
                 <Text style={styles.txtSobremesa}>TAPIOCA CHOCOLATE</Text>
                 <Text style={styles.subSobremesa}>Rende * poções</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
         </View>
       </ScrollView>

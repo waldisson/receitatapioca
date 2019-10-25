@@ -39,7 +39,21 @@ import Mexicana from '../Pages/Screens/Mexicana';
 import Panqueca from '../Pages/Screens/Panqueca';
 import Paozinho from '../Pages/Screens/Paozinho';
 import Lasanha from '../Pages/Screens/Lasanha';
-// import TapiocaChocolate from '../Pages/Screens/TapiocaChocolate';
+
+/**Page de Doces */
+
+import Cuscuz from '../Pages/Screens/Cuscuz';
+import doceChocolate from '../Pages/Screens/doceChocolate';
+import Cestinha from '../Pages/Screens/Cestinha';
+import CremeCoco from '../Pages/Screens/CremeCoco';
+import CafeDoce from '../Pages/Screens/CafeDoce';
+import Morango from '../Pages/Screens/Morango';
+import Manjar from '../Pages/Screens/Manjar';
+// import Coxinha from '../Pages/Screens/Coxinha';
+// import Mexicana from '../Pages/Screens/Mexicana';
+// import Panqueca from '../Pages/Screens/Panqueca';
+// import Paozinho from '../Pages/Screens/Paozinho';
+// import Lasanha from '../Pages/Screens/Lasanha';
 
 console.disableYellowBox = true;
 const MainNavigator = createStackNavigator(
@@ -246,6 +260,55 @@ const MainNavigator = createStackNavigator(
       screen: Lasanha,
       navigationOptions: {
         title: 'Lasanha de Crepioca',
+        header: null,
+      },
+    },
+    Cuscuz: {
+      screen: Cuscuz,
+      navigationOptions: {
+        title: 'Cuscuz Doce',
+        header: null,
+      },
+    },
+    doceChocolate: {
+      screen: doceChocolate,
+      navigationOptions: {
+        title: 'Tapioca de Brigadeiro',
+        header: null,
+      },
+    },
+    Cestinha: {
+      screen: Cestinha,
+      navigationOptions: {
+        title: 'Cestinha de Tapioca',
+        header: null,
+      },
+    },
+    CremeCoco: {
+      screen: CremeCoco,
+      navigationOptions: {
+        title: 'Creme c/ Coco',
+        header: null,
+      },
+    },
+    CafeDoce: {
+      screen: CafeDoce,
+      navigationOptions: {
+        title: 'Café c/ Doce de leite',
+        header: null,
+      },
+    },
+    Morango: {
+      screen: Morango,
+      navigationOptions: {
+        title: 'Morango c/ Leite Condesado',
+        header: null,
+      },
+    },
+    Manjar: {
+      screen: Manjar,
+      navigationOptions: {
+        title: 'Manjar de Tapioca',
         header: null,
       },
     },
