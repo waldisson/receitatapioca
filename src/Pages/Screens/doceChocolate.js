@@ -9,6 +9,7 @@ import {
   Image,
 } from 'react-native';
 import styles from '../../Styles/stylesDoces';
+import Admob from '../../components/Admob';
 
 export default props => {
   /**
@@ -50,13 +51,6 @@ export default props => {
 
           <Text style={styles.h1}>Ingredientes</Text>
           <Text style={styles.subh3}>Tapioca:</Text>
-
-          {/* <View style={styles.banner}>
-         <AdMobBanner
-          adSize="banner"
-          adUnitID="ca-app-pub-5749178758370185/8976418652"
-          />
-         </View> */}
 
           <View style={styles.areaIconSeta}>
             <Image
@@ -134,12 +128,6 @@ export default props => {
 
           <Text style={styles.h1}>Modo de preparo</Text>
 
-          {/* <View style={styles.banner}>
-         <AdMobBanner
-          adSize="banner"
-          adUnitID="ca-app-pub-5749178758370185/8976418652"
-          />
-         </View> */}
           <Text style={styles.subh3}>Modo de Preparo Tapioca:</Text>
 
           <Text style={styles.txtPreparo1}>
@@ -198,16 +186,11 @@ export default props => {
           <Text style={styles.h2}>
             fonte: http://receitadebrigadeiroagora.com.br/
           </Text>
-
-          {/* <View style={styles.banner}>
-           <AdMobBanner
-            adSize="banner"
-            adUnitID="ca-app-pub-5749178758370185/8976418652"
-            
-            />
-            </View> */}
         </View>
       </ScrollView>
+      <View style={{justifyContent: 'center', alignItems: 'center'}}>
+        <Admob />
+      </View>
     </SafeAreaView>
   );
 };

@@ -23,6 +23,17 @@
         </intent-filter>
       </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+
+       <meta-data 
+          android:name="com.google.android.gms.ads.APPLICATION_ID"
+          android:value="ca-app-pub-5749178758370185~8763636010" 
+           
+      />
+      <meta-data 
+          android:name="com.google.android.gms.version"
+          android:value="@integer/google_play_services_version" 
+           
+      />
     </application>
 
 </manifest>

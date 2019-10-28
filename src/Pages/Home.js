@@ -6,35 +6,59 @@ import {
   TouchableHighlight,
   TouchableOpacity,
   Image,
-  ScrollView,
   View,
   ImageBackground,
+  Alert,
+  Share,
+  Linking,
 } from 'react-native';
 import styles from '../Styles/stylesHome';
-import {Fab, Icon, Button} from 'native-base';
-
-playstore = () => {
-  Alert.alert(
-    'Contamos com sua Avaliação!',
-    'Estamos trabalhando para te oferecer as melhores receitas de Tapioca e gostariamos de ouvir seu feedback e sua avaliação na play Store!',
-    [
-      {
-        text: 'Cancelar',
-        onPress: () => console.log('Cancel Pressed'),
-        style: 'cancel',
-      },
-      {text: 'OK', onPress: () => console.log('OK Pressed')},
-      {
-        text: 'Avaliar App',
-        onPress: () =>
-          Linking.openURL('market://details?id=com.receitatapioca'),
-      },
-    ],
-    {cancelable: false},
-  );
-};
+import Admob from '../components/Admob';
 
 export default props => {
+  const shareApp = () => {
+    Share.share({
+      message:
+        'O App 35+ Receitas Tapioca - Tem em seu conteúdo diversas receitas para todas as refeições do seu dia a dia e deixar sua alimentação ainda mais saudáveis. Link para download:  https://play.google.com/store/apps/details?id=com.trintaecinco',
+    });
+  };
+
+  const contato = () => {
+    Alert.alert(
+      'Contato',
+      'Fale conosco através do Email: wal.dev2019@gmail.com.br  e nos envie: dúvidas, sugestões e receitas vegana que você quer ver em nosso app.',
+      [
+        {
+          text: 'ok',
+          onPress: () => console.log('Cancel Pressed'),
+          style: 'cancel',
+        },
+      ],
+      {cancelable: false},
+    );
+  };
+
+  const playstore = () => {
+    Alert.alert(
+      'Contamos com sua Avaliação!',
+      'Estamos trabalhando para te oferecer as melhores receitas com tapioca e gostariamos de receber seu feedback e sua avaliação na play Store!',
+      [
+        {
+          text: 'Cancelar',
+          onPress: () => console.log('Cancel Pressed'),
+          style: 'cancel',
+        },
+
+        {
+          text: 'Avaliar App',
+          onPress: () =>
+            Linking.openURL('market://details?id=com.receitatapioca'),
+        },
+      ],
+      {cancelable: false},
+    );
+  };
+
   /**
    * Transição de botões =======================================================
    */
@@ -61,6 +85,35 @@ export default props => {
         */}
 
         <View>
+          <View style={styles.areaGeralSuperior}>
+            <View style={styles.btnSuperior}>
+              <TouchableOpacity style={styles.btnInterno} onPress={contato}>
+                <Image
+                  source={require('../assets/icon/black-back-closed-envelope-shape.png')}
+                  style={{width: 20, height: 20}}
+                />
+              </TouchableOpacity>
+            </View>
+            <View style={styles.btnSuperior}>
+              <TouchableOpacity style={styles.btnInterno} onPress={shareApp}>
+                <Image
+                  source={require('../assets/icon/share.png')}
+                  style={{width: 20, height: 20}}
+                />
+              </TouchableOpacity>
+            </View>
+            <View style={styles.btnSuperior}>
+              <TouchableOpacity style={styles.btnInterno} onPress={playstore}>
+                <Image
+                  source={require('../assets/icon/playstore.png')}
+                  style={{width: 20, height: 20}}
+                />
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+
+        <View style={{marginLeft: 15}}>
           <Image
             source={require('../assets/img/tapioca/perfil.jpg')}
             style={styles.areaImageFoto}
@@ -68,7 +121,7 @@ export default props => {
         </View>
 
         <View style={styles.btnsAreaGeral}>
-          <TouchableHighlight underlayColor="#ccc" onPress={Sobremesas}>
+          <TouchableHighlight underlayColor="#e8e8e8" onPress={Sobremesas}>
             <View style={{justifyContent: 'center', alignItems: 'center'}}>
               <Image
                 source={require('../assets/img/tapioca/cafe.jpg')}
@@ -88,7 +141,7 @@ export default props => {
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight underlayColor="#ccc" onPress={Salgadas}>
+          <TouchableHighlight underlayColor="#e8e8e8" onPress={Salgadas}>
             <View style={{justifyContent: 'center', alignItems: 'center'}}>
               <Image
                 source={require('../assets/img/tapioca/salgadas.jpg')}
@@ -109,7 +162,7 @@ export default props => {
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight underlayColor="#ccc" onPress={Doces}>
+          <TouchableHighlight underlayColor="#e8e8e8" onPress={Doces}>
             <View style={{justifyContent: 'center', alignItems: 'center'}}>
               <Image
                 source={require('../assets/img/tapioca/doce.jpg')}
@@ -130,7 +183,7 @@ export default props => {
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight underlayColor="#ccc" onPress={Bolos}>
+          <TouchableHighlight underlayColor="#e8e8e8" onPress={Bolos}>
             <View style={{justifyContent: 'center', alignItems: 'center'}}>
               <Image
                 source={require('../assets/img/tapioca/bolo.jpg')}
@@ -155,6 +208,9 @@ export default props => {
           <Text style={styles.txtReceitas}>"35+ Receitas Tapioca"</Text>
         </View>
       </SafeAreaView>
+      <View style={{justifyContent: 'center', alignItems: 'center'}}>
+        <Admob />
+      </View>
     </ImageBackground>
   );
 };

@@ -6,11 +6,10 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 
   //=========================TELA HOME =========================================
+
   background: {
     flex: 1,
   },
@@ -18,9 +17,27 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 180,
   },
+  areaGeralSuperior: {
+    flexDirection: 'row-reverse',
+    marginBottom: 30,
+  },
+  btnSuperior: {
+    width: 50,
+    height: 50,
+    margin: 5,
+    marginTop: 30,
+  },
+  btnInterno: {
+    backgroundColor: 'green',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 25,
+    padding: 15,
+  },
   //texto receitas
   txtReceitas: {
-    marginTop: 40,
+    marginTop: 20,
+    marginBottom: 30,
     color: '#000',
     fontSize: 20,
     textAlign: 'center',
@@ -36,7 +53,7 @@ const styles = StyleSheet.create({
   areaImageFoto: {
     width: 310,
     height: 200,
-    marginBottom: 25,
+    backgroundColor: 'red',
   },
   //Medicos
   btnsAreaGeral: {
@@ -44,6 +61,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     marginHorizontal: 15,
+    marginVertical: 25,
   },
 
   imageIcon: {

@@ -9,6 +9,7 @@ import {
   Image,
 } from 'react-native';
 import styles from '../../Styles/stylesBolos';
+import Admob from '../../components/Admob';
 
 export default props => {
   /**
@@ -150,12 +151,9 @@ export default props => {
 
           <Text style={styles.h1}>Modo de preparo</Text>
 
-          {/* <View style={styles.banner}>
-         <AdMobBanner
-          adSize="banner"
-          adUnitID="ca-app-pub-5749178758370185/8976418652"
-          />
-         </View> */}
+          <View style={{justifyContent: 'center', alignItems: 'center'}}>
+            <Admob />
+          </View>
 
           <View style={styles.areaIconSeta}>
             <Text
@@ -238,16 +236,11 @@ export default props => {
           <Text style={styles.h2}>
             fonte: http://www.gabriellfreitass.com.br/
           </Text>
-
-          {/* <View style={styles.banner}>
-           <AdMobBanner
-            adSize="banner"
-            adUnitID="ca-app-pub-5749178758370185/8976418652"
-            
-            />
-            </View> */}
         </View>
       </ScrollView>
+      <View style={{justifyContent: 'center', alignItems: 'center'}}>
+        <Admob />
+      </View>
     </SafeAreaView>
   );
 };

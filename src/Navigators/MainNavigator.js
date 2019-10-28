@@ -12,7 +12,6 @@ import Bolos from '../Pages/Bolos';
 /**Page de Sobremesas */
 
 import Bolinhodetapioca from '../Pages/Screens/Bolinhodetapioca';
-import Omeletedetapioca from '../Pages/Screens/Omeletedetapioca';
 import SorvetedeTapioca from '../Pages/Screens/SorvetedeTapioca';
 import SacoledeTapioca from '../Pages/Screens/SacoledeTapioca';
 import GeladoFrutas from '../Pages/Screens/GeladoFrutas';
@@ -67,8 +66,6 @@ import BoloChocolate from '../Pages/Screens/BoloChocolate';
 import Vulcao from '../Pages/Screens/Vulcao';
 import Presunto from '../Pages/Screens/Presunto';
 import Salsinha from '../Pages/Screens/Salsinha';
-// import Brownie from '../Pages/Screens/Brownie';
-// import Coco from '../Pages/Screens/Coco';
 
 console.disableYellowBox = true;
 const MainNavigator = createStackNavigator(
@@ -117,13 +114,7 @@ const MainNavigator = createStackNavigator(
         header: null,
       },
     },
-    Omeletedetapioca: {
-      screen: Omeletedetapioca,
-      navigationOptions: {
-        title: 'Omelete de tapioca',
-        header: null,
-      },
-    },
+
     SacoledeTapioca: {
       screen: SacoledeTapioca,
       navigationOptions: {

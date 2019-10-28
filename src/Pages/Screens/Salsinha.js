@@ -9,6 +9,7 @@ import {
   Image,
 } from 'react-native';
 import styles from '../../Styles/stylesBolos';
+import Admob from '../../components/Admob';
 
 export default props => {
   /**
@@ -46,13 +47,6 @@ export default props => {
           </Text>
 
           <Text style={styles.h1}>Ingredientes</Text>
-
-          {/* <View style={styles.banner}>
-         <AdMobBanner
-          adSize="banner"
-          adUnitID="ca-app-pub-5749178758370185/8976418652"
-          />
-         </View> */}
 
           <View style={styles.areaIconSeta}>
             <Image
@@ -120,13 +114,6 @@ export default props => {
 
           <Text style={styles.h1}>Modo de preparo</Text>
 
-          {/* <View style={styles.banner}>
-         <AdMobBanner
-          adSize="banner"
-          adUnitID="ca-app-pub-5749178758370185/8976418652"
-          />
-         </View> */}
-
           <Text style={styles.txtPreparo1}>
             Em uma recipiente, colocar a tapioca granulada e juntar o leite.
             Reservar por 5 minutos para hidratar.
@@ -152,16 +139,11 @@ export default props => {
           </Text>
 
           <Text style={styles.h2}>fonte: https://www.tastemade.com.br/</Text>
-
-          {/* <View style={styles.banner}>
-           <AdMobBanner
-            adSize="banner"
-            adUnitID="ca-app-pub-5749178758370185/8976418652"
-            
-            />
-            </View> */}
         </View>
       </ScrollView>
+      <View style={{justifyContent: 'center', alignItems: 'center'}}>
+        <Admob />
+      </View>
     </SafeAreaView>
   );
 };

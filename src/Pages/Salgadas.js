@@ -6,9 +6,11 @@ import {
   ScrollView,
   View,
   TouchableOpacity,
+  TouchableHighlight,
   Image,
 } from 'react-native';
 import styles from '../Styles/stylesSalgada';
+import Admob from '../components/Admob';
 
 export default props => {
   /**
@@ -74,7 +76,7 @@ export default props => {
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{flexDirection: 'row'}}>
           <View>
-            <TouchableOpacity onPress={Omelete}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Omelete}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
                   source={require('../assets/img/tapioca/omelete.jpg')}
@@ -83,11 +85,11 @@ export default props => {
                 <Text style={styles.txtSobremesa}>OMELETE DE TAPIOCA</Text>
                 <Text style={styles.subSobremesa}>Rendimento * porções</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
 
           <View>
-            <TouchableOpacity onPress={Legumes}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Legumes}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
                   source={require('../assets/img/tapioca/legumes.jpg')}
@@ -96,12 +98,12 @@ export default props => {
                 <Text style={styles.txtSobremesa}>TAPIOCA c/ LEGUMES</Text>
                 <Text style={styles.subSobremesa}>Rendimento 5 porções</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
         </View>
         <View style={{flexDirection: 'row'}}>
           <View>
-            <TouchableOpacity onPress={Carnedosol}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Carnedosol}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
                   source={require('../assets/img/tapioca/carnedosol.jpg')}
@@ -110,11 +112,11 @@ export default props => {
                 <Text style={styles.txtSobremesa}>CARNE DO SOL</Text>
                 <Text style={styles.subSobremesa}>Rendimento * porções</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
 
           <View>
-            <TouchableOpacity onPress={Atum}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Atum}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
                   source={require('../assets/img/tapioca/atum.jpg')}
@@ -123,13 +125,13 @@ export default props => {
                 <Text style={styles.txtSobremesa}>TAPIOCA c/ ATUM</Text>
                 <Text style={styles.subSobremesa}>Rendimento 8 porções</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
         </View>
 
         <View style={{flexDirection: 'row'}}>
           <View>
-            <TouchableOpacity onPress={frango}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={frango}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
                   source={require('../assets/img/tapioca/frango.jpg')}
@@ -138,11 +140,11 @@ export default props => {
                 <Text style={styles.txtSobremesa}>TAPIOCA c/ FRANGO</Text>
                 <Text style={styles.subSobremesa}>Rendimento 1 porções</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
 
           <View>
-            <TouchableOpacity onPress={Torta}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Torta}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
                   source={require('../assets/img/tapioca/torta.jpg')}
@@ -151,13 +153,13 @@ export default props => {
                 <Text style={styles.txtSobremesa}>TORTA DE TAPIOCA</Text>
                 <Text style={styles.subSobremesa}>Rendimento * porções</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
         </View>
 
         <View style={{flexDirection: 'row'}}>
           <View>
-            <TouchableOpacity onPress={Dadinho}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Dadinho}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
                   source={require('../assets/img/tapioca/dadinho.jpg')}
@@ -166,11 +168,11 @@ export default props => {
                 <Text style={styles.txtSobremesa}>DADINHO ASSADO</Text>
                 <Text style={styles.subSobremesa}>Rendimento 4 porções</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
 
           <View>
-            <TouchableOpacity onPress={Coxinha}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Coxinha}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
                   source={require('../assets/img/tapioca/coxinha.jpg')}
@@ -179,13 +181,13 @@ export default props => {
                 <Text style={styles.txtSobremesa}>COXINHA DE TAPIOCA</Text>
                 <Text style={styles.subSobremesa}>Rende * Coxinhas</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
         </View>
 
         <View style={{flexDirection: 'row'}}>
           <View>
-            <TouchableOpacity onPress={Mexicana}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Mexicana}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
                   source={require('../assets/img/tapioca/mexicana.jpg')}
@@ -194,11 +196,11 @@ export default props => {
                 <Text style={styles.txtSobremesa}>TAPIOCA MEXICANA</Text>
                 <Text style={styles.subSobremesa}>Rendimento * porções</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
 
           <View>
-            <TouchableOpacity onPress={Panqueca}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Panqueca}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
                   source={require('../assets/img/tapioca/panqueca.jpg')}
@@ -207,13 +209,13 @@ export default props => {
                 <Text style={styles.txtSobremesa}>PANQUECA</Text>
                 <Text style={styles.subSobremesa}>Rende * porções</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
         </View>
 
         <View style={{flexDirection: 'row', marginBottom: 20}}>
           <View>
-            <TouchableOpacity onPress={Paozinho}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Paozinho}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
                   source={require('../assets/img/tapioca/paozinhodetapioca.jpg')}
@@ -222,11 +224,11 @@ export default props => {
                 <Text style={styles.txtSobremesa}>PÃOZINHO</Text>
                 <Text style={styles.subSobremesa}>Rendimento * porções</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
 
           <View>
-            <TouchableOpacity onPress={Lasanha}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Lasanha}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
                   source={require('../assets/img/tapioca/crepioca.jpg')}
@@ -235,10 +237,13 @@ export default props => {
                 <Text style={styles.txtSobremesa}>LASANHA</Text>
                 <Text style={styles.subSobremesa}>Rende * poções</Text>
               </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
         </View>
       </ScrollView>
+      <View style={{justifyContent: 'center', alignItems: 'center'}}>
+        <Admob />
+      </View>
     </SafeAreaView>
   );
 };

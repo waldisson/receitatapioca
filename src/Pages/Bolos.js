@@ -10,6 +10,7 @@ import {
   Image,
 } from 'react-native';
 import styles from '../Styles/stylesBolos';
+import Admob from '../components/Admob';
 
 export default props => {
   /**
@@ -210,6 +211,9 @@ export default props => {
           </View>
         </View>
       </ScrollView>
+      <View style={{justifyContent: 'center', alignItems: 'center'}}>
+        <Admob />
+      </View>
     </SafeAreaView>
   );
 };

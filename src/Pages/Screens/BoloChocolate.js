@@ -9,6 +9,7 @@ import {
   Image,
 } from 'react-native';
 import styles from '../../Styles/stylesBolos';
+import Admob from '../../components/Admob';
 
 export default props => {
   /**
@@ -47,13 +48,6 @@ export default props => {
           </Text>
 
           <Text style={styles.h1}>Ingredientes</Text>
-
-          {/* <View style={styles.banner}>
-         <AdMobBanner
-          adSize="banner"
-          adUnitID="ca-app-pub-5749178758370185/8976418652"
-          />
-         </View> */}
 
           <View style={styles.areaIconSeta}>
             <Image
@@ -156,13 +150,6 @@ export default props => {
 
           <Text style={styles.h1}>Modo de preparo</Text>
 
-          {/* <View style={styles.banner}>
-         <AdMobBanner
-          adSize="banner"
-          adUnitID="ca-app-pub-5749178758370185/8976418652"
-          />
-         </View> */}
-
           <Text style={styles.txtPreparo1}>
             Leve uma panela ao fogo médio com o leite de coco, o leite e o leite
             condensando até ferver.
@@ -189,16 +176,11 @@ export default props => {
           <Text style={styles.txtPreparo1}>Polvilhe com coco e sirva.</Text>
 
           <Text style={styles.h2}>fonte: https://guiadacozinha.com.br/</Text>
-
-          {/* <View style={styles.banner}>
-           <AdMobBanner
-            adSize="banner"
-            adUnitID="ca-app-pub-5749178758370185/8976418652"
-            
-            />
-            </View> */}
         </View>
       </ScrollView>
+      <View style={{justifyContent: 'center', alignItems: 'center'}}>
+        <Admob />
+      </View>
     </SafeAreaView>
   );
 };

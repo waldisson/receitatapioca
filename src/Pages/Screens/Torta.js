@@ -9,6 +9,7 @@ import {
   Image,
 } from 'react-native';
 import styles from '../../Styles/stylesSalgada';
+import Admob from '../../components/Admob';
 
 export default props => {
   /**
@@ -47,13 +48,6 @@ export default props => {
           </Text>
 
           <Text style={styles.h1}>Ingredientes</Text>
-
-          {/* <View style={styles.banner}>
-         <AdMobBanner
-          adSize="banner"
-          adUnitID="ca-app-pub-5749178758370185/8976418652"
-          />
-         </View> */}
 
           <View style={styles.areaIconSeta}>
             <Image
@@ -116,13 +110,6 @@ export default props => {
 
           <Text style={styles.h1}>Modo de preparo do Recheio</Text>
 
-          {/* <View style={styles.banner}>
-         <AdMobBanner
-          adSize="banner"
-          adUnitID="ca-app-pub-5749178758370185/8976418652"
-          />
-         </View> */}
-
           <Text style={styles.txtPreparo1}>
             1 – Refogue 1 cebola grande, 1 dente de alho e 1 tomate picado na
             manteiga. Adicione 200 g de peito de frango e deixe dourar. Cubra
@@ -184,16 +171,11 @@ export default props => {
           </Text>
 
           <Text style={styles.h2}>fonte: https://receitanatureba.com</Text>
-
-          {/* <View style={styles.banner}>
-           <AdMobBanner
-            adSize="banner"
-            adUnitID="ca-app-pub-5749178758370185/8976418652"
-            
-            />
-            </View> */}
         </View>
       </ScrollView>
+      <View style={{justifyContent: 'center', alignItems: 'center'}}>
+        <Admob />
+      </View>
     </SafeAreaView>
   );
 };
