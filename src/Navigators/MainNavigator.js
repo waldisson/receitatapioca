@@ -61,12 +61,12 @@ import Liquidificador from '../Pages/Screens/Liquidificador';
 import BoloTapioca from '../Pages/Screens/BoloTapioca';
 import Cremoso from '../Pages/Screens/Cremoso';
 import Tripioca from '../Pages/Screens/Tripioca';
-// import CafeDoce from '../Pages/Screens/CafeDoce';
-// import Morango from '../Pages/Screens/Morango';
-// import Manjar from '../Pages/Screens/Manjar';
-// import Abobora from '../Pages/Screens/Abobora';
-// import Abacaxi from '../Pages/Screens/Abacaxi';
-// import DocedeLeite from '../Pages/Screens/DocedeLeite';
+import Simples from '../Pages/Screens/Simples';
+import CarocoPiaui from '../Pages/Screens/CarocoPiaui';
+import BoloChocolate from '../Pages/Screens/BoloChocolate';
+import Vulcao from '../Pages/Screens/Vulcao';
+import Presunto from '../Pages/Screens/Presunto';
+import Salsinha from '../Pages/Screens/Salsinha';
 // import Brownie from '../Pages/Screens/Brownie';
 // import Coco from '../Pages/Screens/Coco';
 
@@ -387,6 +387,51 @@ const MainNavigator = createStackNavigator(
       screen: Tripioca,
       navigationOptions: {
         title: 'Bolo Tripioca',
+        header: null,
+      },
+    },
+    Simples: {
+      screen: Simples,
+      navigationOptions: {
+        title: 'Bolo Simples',
+        header: null,
+      },
+    },
+
+    CarocoPiaui: {
+      screen: CarocoPiaui,
+      navigationOptions: {
+        title: 'Bolo Caroço do Piauí',
+        header: null,
+      },
+    },
+
+    BoloChocolate: {
+      screen: BoloChocolate,
+      navigationOptions: {
+        title: 'Bolo c/ Chocolate',
+        header: null,
+      },
+    },
+    Vulcao: {
+      screen: Vulcao,
+      navigationOptions: {
+        title: 'Bolo Vulcão ',
+        header: null,
+      },
+    },
+    Presunto: {
+      screen: Presunto,
+      navigationOptions: {
+        title: 'Bolinho de Presunto ',
+        header: null,
+      },
+    },
+
+    Salsinha: {
+      screen: Salsinha,
+      navigationOptions: {
+        title: 'Bolinho com Salsinha ',
         header: null,
       },
     },

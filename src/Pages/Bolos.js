@@ -31,28 +31,28 @@ export default props => {
     props.navigation.navigate('Tripioca');
   };
 
-  const CafeDoce = () => {
-    props.navigation.navigate('CafeDoce');
+  const Simples = () => {
+    props.navigation.navigate('Simples');
   };
 
-  const Morango = () => {
-    props.navigation.navigate('Morango');
+  const CarocoPiaui = () => {
+    props.navigation.navigate('CarocoPiaui');
   };
 
-  const Manjar = () => {
-    props.navigation.navigate('Manjar');
+  const BoloChocolate = () => {
+    props.navigation.navigate('BoloChocolate');
   };
 
-  const Abobora = () => {
-    props.navigation.navigate('Abobora');
+  const Vulcao = () => {
+    props.navigation.navigate('Vulcao');
   };
 
-  const Abacaxi = () => {
-    props.navigation.navigate('Abacaxi');
+  const Presunto = () => {
+    props.navigation.navigate('Presunto');
   };
 
-  const DocedeLeite = () => {
-    props.navigation.navigate('DocedeLeite');
+  const Salsinha = () => {
+    props.navigation.navigate('Salsinha');
   };
 
   const Brownie = () => {
@@ -128,27 +128,27 @@ export default props => {
 
         <View style={{flexDirection: 'row'}}>
           <View>
-            <TouchableHighlight underlayColor="#e8e8e8" onPress={CafeDoce}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Simples}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
-                  source={require('../assets/img/tapioca/docedeleite.jpg')}
+                  source={require('../assets/img/tapioca/simples.jpg')}
                   style={styles.imgSobremesa}
                 />
-                <Text style={styles.txtSobremesa}>CAFÉ c/ DOCE DE LEITE</Text>
-                <Text style={styles.subSobremesa}>Rendimento 8 porções</Text>
+                <Text style={styles.txtSobremesa}>BOLO SIMPLES</Text>
+                <Text style={styles.subSobremesa}>Rendimento 20 porções</Text>
               </View>
             </TouchableHighlight>
           </View>
 
           <View>
-            <TouchableHighlight underlayColor="#e8e8e8" onPress={Morango}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={CarocoPiaui}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
-                  source={require('../assets/img/tapioca/tapioca_de_morango.jpg')}
+                  source={require('../assets/img/tapioca/piaui.jpg')}
                   style={styles.imgSobremesa}
                 />
-                <Text style={styles.txtSobremesa}>MORANGO c/ LEITE C...</Text>
-                <Text style={styles.subSobremesa}>Rendimento * porções</Text>
+                <Text style={styles.txtSobremesa}>CAROÇO DO PIAUÍ</Text>
+                <Text style={styles.subSobremesa}>Rendimento 8 porções</Text>
               </View>
             </TouchableHighlight>
           </View>
@@ -156,26 +156,26 @@ export default props => {
 
         <View style={{flexDirection: 'row'}}>
           <View>
-            <TouchableHighlight underlayColor="#e8e8e8" onPress={Manjar}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={BoloChocolate}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
-                  source={require('../assets/img/tapioca/Manjar.jpg')}
+                  source={require('../assets/img/tapioca/tapiocaChocolate.jpg')}
                   style={styles.imgSobremesa}
                 />
-                <Text style={styles.txtSobremesa}>MANJAR DE TAPIOCA</Text>
-                <Text style={styles.subSobremesa}>Rendimento 6 porções</Text>
+                <Text style={styles.txtSobremesa}>BOLO C/ CHOCOLATE</Text>
+                <Text style={styles.subSobremesa}>Rendimento 8 porções</Text>
               </View>
             </TouchableHighlight>
           </View>
 
           <View>
-            <TouchableHighlight underlayColor="#e8e8e8" onPress={Abobora}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Vulcao}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
-                  source={require('../assets/img/tapioca/abobora.jpg')}
+                  source={require('../assets/img/tapioca/vulcao.jpg')}
                   style={styles.imgSobremesa}
                 />
-                <Text style={styles.txtSobremesa}>TAPIOCA c/ ABÓBORA</Text>
+                <Text style={styles.txtSobremesa}>VULCÃO DE TAPIOCA</Text>
                 <Text style={styles.subSobremesa}>Rende * porções</Text>
               </View>
             </TouchableHighlight>
@@ -184,55 +184,27 @@ export default props => {
 
         <View style={{flexDirection: 'row'}}>
           <View>
-            <TouchableHighlight underlayColor="#e8e8e8" onPress={Abacaxi}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Presunto}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
-                  source={require('../assets/img/tapioca/pudim_tapioca.jpg')}
+                  source={require('../assets/img/tapioca/presunto.jpg')}
                   style={styles.imgSobremesa}
                 />
-                <Text style={styles.txtSobremesa}>PUDIM DE ABACAXI</Text>
-                <Text style={styles.subSobremesa}>Rendimento * porções</Text>
+                <Text style={styles.txtSobremesa}>BOLINHO c/ PRESUNTO</Text>
+                <Text style={styles.subSobremesa}>Rendimento 10 unidades</Text>
               </View>
             </TouchableHighlight>
           </View>
 
           <View>
-            <TouchableHighlight underlayColor="#e8e8e8" onPress={DocedeLeite}>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Salsinha}>
               <View style={styles.btnAreaSobremesa}>
                 <Image
-                  source={require('../assets/img/tapioca/tapioca_doce_leite.jpg')}
+                  source={require('../assets/img/tapioca/salsinha.jpg')}
                   style={styles.imgSobremesa}
                 />
-                <Text style={styles.txtSobremesa}>DOCE DE LEITE</Text>
-                <Text style={styles.subSobremesa}>Rende * porção</Text>
-              </View>
-            </TouchableHighlight>
-          </View>
-        </View>
-
-        <View style={{flexDirection: 'row', marginBottom: 20}}>
-          <View>
-            <TouchableHighlight underlayColor="#e8e8e8" onPress={Brownie}>
-              <View style={styles.btnAreaSobremesa}>
-                <Image
-                  source={require('../assets/img/tapioca/brownie.jpg')}
-                  style={styles.imgSobremesa}
-                />
-                <Text style={styles.txtSobremesa}>BROWNIE DE TAPIOCA</Text>
-                <Text style={styles.subSobremesa}>Rendimento * porções</Text>
-              </View>
-            </TouchableHighlight>
-          </View>
-
-          <View>
-            <TouchableHighlight underlayColor="#e8e8e8" onPress={Coco}>
-              <View style={styles.btnAreaSobremesa}>
-                <Image
-                  source={require('../assets/img/tapioca/coco.jpg')}
-                  style={styles.imgSobremesa}
-                />
-                <Text style={styles.txtSobremesa}>TAPIOCA c/ COCO</Text>
-                <Text style={styles.subSobremesa}>Rende * poções</Text>
+                <Text style={styles.txtSobremesa}>BOLINHO c/ SALSINHA</Text>
+                <Text style={styles.subSobremesa}>Rende 10 unidades</Text>
               </View>
             </TouchableHighlight>
           </View>
