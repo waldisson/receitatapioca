@@ -49,11 +49,26 @@ import CremeCoco from '../Pages/Screens/CremeCoco';
 import CafeDoce from '../Pages/Screens/CafeDoce';
 import Morango from '../Pages/Screens/Morango';
 import Manjar from '../Pages/Screens/Manjar';
-// import Coxinha from '../Pages/Screens/Coxinha';
-// import Mexicana from '../Pages/Screens/Mexicana';
-// import Panqueca from '../Pages/Screens/Panqueca';
-// import Paozinho from '../Pages/Screens/Paozinho';
-// import Lasanha from '../Pages/Screens/Lasanha';
+import Abobora from '../Pages/Screens/Abobora';
+import Abacaxi from '../Pages/Screens/Abacaxi';
+import DocedeLeite from '../Pages/Screens/DocedeLeite';
+import Brownie from '../Pages/Screens/Brownie';
+import Coco from '../Pages/Screens/Coco';
+
+/**Page de Bolos */
+
+import Liquidificador from '../Pages/Screens/Liquidificador';
+import BoloTapioca from '../Pages/Screens/BoloTapioca';
+import Cremoso from '../Pages/Screens/Cremoso';
+import Tripioca from '../Pages/Screens/Tripioca';
+// import CafeDoce from '../Pages/Screens/CafeDoce';
+// import Morango from '../Pages/Screens/Morango';
+// import Manjar from '../Pages/Screens/Manjar';
+// import Abobora from '../Pages/Screens/Abobora';
+// import Abacaxi from '../Pages/Screens/Abacaxi';
+// import DocedeLeite from '../Pages/Screens/DocedeLeite';
+// import Brownie from '../Pages/Screens/Brownie';
+// import Coco from '../Pages/Screens/Coco';
 
 console.disableYellowBox = true;
 const MainNavigator = createStackNavigator(
@@ -309,6 +324,69 @@ const MainNavigator = createStackNavigator(
       screen: Manjar,
       navigationOptions: {
         title: 'Manjar de Tapioca',
+        header: null,
+      },
+    },
+    Abobora: {
+      screen: Abobora,
+      navigationOptions: {
+        title: 'Tapioca doce de abóbora',
+        header: null,
+      },
+    },
+    Abacaxi: {
+      screen: Abacaxi,
+      navigationOptions: {
+        title: 'Pudim de Abacaxi',
+        header: null,
+      },
+    },
+    DocedeLeite: {
+      screen: DocedeLeite,
+      navigationOptions: {
+        title: 'Doce de Leite',
+        header: null,
+      },
+    },
+    Brownie: {
+      screen: Brownie,
+      navigationOptions: {
+        title: 'Brownie de Tapioca',
+        header: null,
+      },
+    },
+    Coco: {
+      screen: Coco,
+      navigationOptions: {
+        title: 'Tapioca c/ Coco',
+        header: null,
+      },
+    },
+    Liquidificador: {
+      screen: Liquidificador,
+      navigationOptions: {
+        title: 'Bolo de Liquidificador',
+        header: null,
+      },
+    },
+    BoloTapioca: {
+      screen: BoloTapioca,
+      navigationOptions: {
+        title: 'Bolo de Tapioca',
+        header: null,
+      },
+    },
+    Cremoso: {
+      screen: Cremoso,
+      navigationOptions: {
+        title: 'Bolo Cremoso',
+        header: null,
+      },
+    },
+    Tripioca: {
+      screen: Tripioca,
+      navigationOptions: {
+        title: 'Bolo Tripioca',
         header: null,
       },
     },
