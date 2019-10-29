@@ -1,5 +1,5 @@
 //Importando o hooks do React ==================================================
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   Text,
   SafeAreaView,
@@ -14,12 +14,13 @@ import {
 } from 'react-native';
 import styles from '../Styles/stylesHome';
 import Admob from '../components/Admob';
+import Shimmer from '../components/Shimmer';
 
 export default props => {
   const shareApp = () => {
     Share.share({
       message:
-        'O App 35+ Receitas Tapioca - Tem em seu conteúdo diversas receitas para todas as refeições do seu dia a dia e deixar sua alimentação ainda mais saudáveis. Link para download:  https://play.google.com/store/apps/details?id=com.trintaecinco',
+        'O App 35+ Receitas Tapioca - Tem em seu conteúdo diversas receitas para todas as refeições do seu dia a dia e deixar sua alimentação ainda mais saudáveis. Link para download:  https://play.google.com/store/apps/details?id=com.receitatapioca',
     });
   };
 
@@ -75,6 +76,19 @@ export default props => {
     props.navigation.navigate('Bolos');
   };
 
+  /**
+   * Montagem do efeito de loading
+   */
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const isVisible = setTimeout(() => {
+      setIsVisible(true);
+    }, 1500);
+    return () => clearTimeout(isVisible);
+  }, []);
+
   return (
     <ImageBackground
       source={require('../assets/img/tapioca/perfilback.fw.png')}
@@ -87,28 +101,43 @@ export default props => {
         <View>
           <View style={styles.areaGeralSuperior}>
             <View style={styles.btnSuperior}>
-              <TouchableOpacity style={styles.btnInterno} onPress={contato}>
-                <Image
-                  source={require('../assets/icon/black-back-closed-envelope-shape.png')}
-                  style={{width: 20, height: 20}}
-                />
-              </TouchableOpacity>
+              <Shimmer
+                style={styles.shimmerIcon}
+                autoRun={true}
+                visible={isVisible}>
+                <TouchableOpacity style={styles.btnInterno} onPress={contato}>
+                  <Image
+                    source={require('../assets/icon/black-back-closed-envelope-shape.png')}
+                    style={{width: 20, height: 20}}
+                  />
+                </TouchableOpacity>
+              </Shimmer>
             </View>
             <View style={styles.btnSuperior}>
-              <TouchableOpacity style={styles.btnInterno} onPress={shareApp}>
-                <Image
-                  source={require('../assets/icon/share.png')}
-                  style={{width: 20, height: 20}}
-                />
-              </TouchableOpacity>
+              <Shimmer
+                style={styles.shimmerIcon}
+                autoRun={true}
+                visible={isVisible}>
+                <TouchableOpacity style={styles.btnInterno} onPress={shareApp}>
+                  <Image
+                    source={require('../assets/icon/share.png')}
+                    style={{width: 20, height: 20}}
+                  />
+                </TouchableOpacity>
+              </Shimmer>
             </View>
             <View style={styles.btnSuperior}>
-              <TouchableOpacity style={styles.btnInterno} onPress={playstore}>
-                <Image
-                  source={require('../assets/icon/playstore.png')}
-                  style={{width: 20, height: 20}}
-                />
-              </TouchableOpacity>
+              <Shimmer
+                style={styles.shimmerIcon}
+                autoRun={true}
+                visible={isVisible}>
+                <TouchableOpacity style={styles.btnInterno} onPress={playstore}>
+                  <Image
+                    source={require('../assets/icon/playstore.png')}
+                    style={{width: 20, height: 20}}
+                  />
+                </TouchableOpacity>
+              </Shimmer>
             </View>
           </View>
         </View>
@@ -121,88 +150,73 @@ export default props => {
         </View>
 
         <View style={styles.btnsAreaGeral}>
-          <TouchableHighlight underlayColor="#e8e8e8" onPress={Sobremesas}>
-            <View style={{justifyContent: 'center', alignItems: 'center'}}>
-              <Image
-                source={require('../assets/img/tapioca/cafe.jpg')}
-                style={styles.imIconCafe}
-              />
-              <Text
-                style={{
-                  fontSize: 10,
-                  backgroundColor: '#4F4FFF',
-                  borderRadius: 5,
-                  padding: 5,
-                  color: '#fff',
-                  elevation: 2,
-                }}>
-                Sobremesas
-              </Text>
-            </View>
-          </TouchableHighlight>
+          <View>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Sobremesas}>
+              <View style={{justifyContent: 'center', alignItems: 'center'}}>
+                <Shimmer
+                  style={styles.shimmerBotoes}
+                  autoRun={true}
+                  visible={isVisible}>
+                  <Image
+                    source={require('../assets/img/tapioca/cafe.jpg')}
+                    style={styles.imIconCafe}
+                  />
+                  <Text style={styles.txtAzul}>Sobremesas</Text>
+                </Shimmer>
+              </View>
+            </TouchableHighlight>
+          </View>
 
-          <TouchableHighlight underlayColor="#e8e8e8" onPress={Salgadas}>
-            <View style={{justifyContent: 'center', alignItems: 'center'}}>
-              <Image
-                source={require('../assets/img/tapioca/salgadas.jpg')}
-                style={styles.imIconLanche}
-              />
-              <Text
-                style={{
-                  fontSize: 12,
-                  backgroundColor: '#FF0000',
-                  borderRadius: 5,
-                  padding: 3.7,
-                  paddingHorizontal: 10,
-                  color: '#fff',
-                  elevation: 2,
-                }}>
-                Salgadas
-              </Text>
-            </View>
-          </TouchableHighlight>
+          <View>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Salgadas}>
+              <View style={{justifyContent: 'center', alignItems: 'center'}}>
+                <Shimmer
+                  style={styles.shimmerBotoes}
+                  autoRun={true}
+                  visible={isVisible}>
+                  <Image
+                    source={require('../assets/img/tapioca/salgadas.jpg')}
+                    style={styles.imIconLanche}
+                  />
+                  <Text style={styles.txtVermelho}>Salgadas</Text>
+                </Shimmer>
+              </View>
+            </TouchableHighlight>
+          </View>
 
-          <TouchableHighlight underlayColor="#e8e8e8" onPress={Doces}>
-            <View style={{justifyContent: 'center', alignItems: 'center'}}>
-              <Image
-                source={require('../assets/img/tapioca/doce.jpg')}
-                style={styles.imIconAlmoco}
-              />
-              <Text
-                style={{
-                  fontSize: 12,
-                  backgroundColor: '#C95218',
-                  borderRadius: 5,
-                  padding: 3.7,
-                  paddingHorizontal: 12,
-                  color: '#fff',
-                  elevation: 2,
-                }}>
-                Doces
-              </Text>
-            </View>
-          </TouchableHighlight>
+          <View>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Doces}>
+              <View style={{justifyContent: 'center', alignItems: 'center'}}>
+                <Shimmer
+                  style={styles.shimmerBotoes}
+                  autoRun={true}
+                  visible={isVisible}>
+                  <Image
+                    source={require('../assets/img/tapioca/doce.jpg')}
+                    style={styles.imIconAlmoco}
+                  />
+                  <Text style={styles.txtLaranja}>Doces</Text>
+                </Shimmer>
+              </View>
+            </TouchableHighlight>
+          </View>
 
-          <TouchableHighlight underlayColor="#e8e8e8" onPress={Bolos}>
-            <View style={{justifyContent: 'center', alignItems: 'center'}}>
-              <Image
-                source={require('../assets/img/tapioca/bolo.jpg')}
-                style={styles.imIconJantar}
-              />
-              <Text
-                style={{
-                  fontSize: 12,
-                  backgroundColor: '#546F42',
-                  borderRadius: 5,
-                  padding: 3.7,
-                  paddingHorizontal: 20,
-                  color: '#fff',
-                  elevation: 2,
-                }}>
-                Bolos
-              </Text>
-            </View>
-          </TouchableHighlight>
+          <View>
+            <TouchableHighlight underlayColor="#e8e8e8" onPress={Bolos}>
+              <View style={{justifyContent: 'center', alignItems: 'center'}}>
+                <Shimmer
+                  style={styles.shimmerBotoes}
+                  autoRun={true}
+                  visible={isVisible}>
+                  <Image
+                    source={require('../assets/img/tapioca/bolo.jpg')}
+                    style={styles.imIconJantar}
+                  />
+                  <Text style={styles.txtVerde}>Bolos</Text>
+                </Shimmer>
+              </View>
+            </TouchableHighlight>
+          </View>
         </View>
         <View>
           <Text style={styles.txtReceitas}>"35+ Receitas Tapioca"</Text>

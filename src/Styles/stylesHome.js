@@ -53,7 +53,6 @@ const styles = StyleSheet.create({
   areaImageFoto: {
     width: 310,
     height: 200,
-    backgroundColor: 'red',
   },
   //Medicos
   btnsAreaGeral: {
@@ -136,6 +135,59 @@ const styles = StyleSheet.create({
     marginTop: 80,
     justifyContent: 'flex-end',
     alignItems: 'center',
+  },
+  shimmerIcon: {
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+  },
+  shimmerBotoes: {
+    width: 70,
+    height: 70,
+    borderRadius: 35,
+  },
+  txtVerde: {
+    fontSize: 12,
+    backgroundColor: '#546F42',
+    borderRadius: 5,
+    padding: 3.7,
+    paddingHorizontal: 20,
+    color: '#fff',
+    elevation: 2,
+    margin: 5,
+    textAlign: 'center',
+  },
+  txtLaranja: {
+    fontSize: 12,
+    backgroundColor: '#C95218',
+    borderRadius: 5,
+    padding: 3.7,
+    paddingHorizontal: 12,
+    color: '#fff',
+    elevation: 2,
+    margin: 5,
+    textAlign: 'center',
+  },
+  txtVermelho: {
+    fontSize: 12,
+    backgroundColor: '#FF0000',
+    borderRadius: 5,
+    padding: 3.7,
+    paddingHorizontal: 10,
+    color: '#fff',
+    elevation: 2,
+    margin: 5,
+    textAlign: 'center',
+  },
+  txtAzul: {
+    fontSize: 10,
+    backgroundColor: '#4F4FFF',
+    borderRadius: 5,
+    padding: 5,
+    color: '#fff',
+    elevation: 2,
+    margin: 5,
+    textAlign: 'center',
   },
 });
 
